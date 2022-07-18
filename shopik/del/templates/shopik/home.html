@@ -1,0 +1,12 @@
+{% extends 'shopik/base.html'%}
+{% block page %}
+
+ {% block content %}
+  {%for product in products%}
+        <div class="product">
+   <img src="{{product.src}}" alt="">
+  </div>
+  {% endfor %}
+ {% endblock %}
+
+{% endblock %}
